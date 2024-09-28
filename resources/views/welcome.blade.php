@@ -1,20 +1,28 @@
 <x-layout>
-    <section>
-        <h3>Top Jobs</h3>
-        <div>
-            <div class="capitalize">laracast</div>
-            <div>
-                <div>Video Producer</div>
-                <div>Full-Time From $60,000</div>
+    <div class="space-y-10">
+        <section>
+            <x-section-heading>Featured Jobs</x-section-heading>
+            <div class="grid gap-8 mt-6 lg:grid-cols-3">
+                <x-job-card />
+                <x-job-card />
+                <x-job-card />
             </div>
-            <div>
-                <div>
-                    <a href="">Tag</a>
-                    <a href="">Tag</a>
-                    <a href="">Tag</a>
-                </div>
-                <img src="https://placehold.it/43x43/f4f4f4 " alt="">
+        </section>
+        <section>
+            <x-section-heading>Tags</x-section-heading>
+            <div class="mt-6 space-x-2">
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
+                <x-tag-card></x-tag-card>
             </div>
-        </div>
-    </section>
+        </section>
+        <section><x-section-heading>Recent Jobs</x-section-heading></section>
+
+    </div>
 </x-layout>
