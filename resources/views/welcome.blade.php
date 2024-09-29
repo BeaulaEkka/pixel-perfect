@@ -22,7 +22,14 @@
                 <x-tag-card></x-tag-card>
             </div>
         </section>
-        <section><x-section-heading>Recent Jobs</x-section-heading></section>
+        <section>
+            <x-section-heading>Recent Jobs</x-section-heading>
+            <div class="flex flex-col mt-4 space-y-4">
+                <x-job-card-wide />
+                <x-job-card-wide />
+                <x-job-card-wide />
+            </div>
+        </section>
 
     </div>
 </x-layout>
